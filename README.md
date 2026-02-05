@@ -7,10 +7,10 @@ Department of Computer Science · Jazan University
 A convolutional neural network implementation for handwritten digit classification using the MNIST dataset. The model achieves **99.0% test accuracy** through automated feature learning from raw pixel data.
 
 ## Key Features
-- **End-to-End Pipeline**: Complete workflow from data exploration to model deployment
+- **Complete Implementation**: Full workflow from data loading to model evaluation
 - **LeNet-Inspired Architecture**: Efficient CNN design optimized for digit recognition
-- **Comprehensive Evaluation**: Confusion matrix, classification metrics, and prediction visualizations
-- **Production-Ready Code**: Modular structure with clear documentation
+- **Comprehensive Analysis**: Confusion matrix, classification metrics, and visualizations
+- **Well-Documented**: Clear code structure with detailed explanations
 
 ## Results
 | Metric | Score |
@@ -22,31 +22,26 @@ A convolutional neural network implementation for handwritten digit classificati
 
 ## Repository Structure
 ```
-MNIST-CNN-Classifier/
-├── src/                    # Source modules
-│   ├── data_preprocessor.py
-│   ├── model_builder.py
-│   └── evaluator.py
-├── notebooks/              # Analysis notebooks
-│   ├── 01_eda.ipynb
-│   └── 02_training.ipynb
-├── models/                 # Saved models
-├── reports/                # Output figures
-├── requirements.txt        # Dependencies
-└── README.md               # Documentation
+Handwritten-Digit-Recognition-CNN/
+├── Handwritten-Digit-Recognition-CNN.ipynb  # Complete CNN implementation
+├── README.md                                 # Project documentation
+├── LICENSE                                   # MIT License
+├── .gitignore                                # Git exclusion rules
+├── requirements.txt                          # Python dependencies
+└── .project_version                          # Project version (v1.0.0)
 ```
 
 ## Quick Start
 ```bash
-# Clone repository
-git clone https://github.com/[username]/MNIST-CNN-Classifier.git
-cd MNIST-CNN-Classifier
+# 1. Clone repository
+git clone https://github.com/Ahmed-Alaglan/Handwritten-Digit-Recognition-CNN.git
+cd Handwritten-Digit-Recognition-CNN
 
-# Install dependencies
+# 2. Install dependencies
 pip install -r requirements.txt
 
-# Run training
-python src/train.py
+# 3. Run the notebook
+jupyter notebook Handwritten-Digit-Recognition-CNN.ipynb
 ```
 
 ## Dependencies
@@ -56,6 +51,7 @@ numpy>=1.23.0
 matplotlib>=3.6.0
 scikit-learn>=1.2.0
 pandas>=1.5.0
+jupyter>=1.0.0
 ```
 
 ## Model Architecture
@@ -69,7 +65,6 @@ Input (28×28×1) → Conv2D(32) → MaxPool → Conv2D(64) → MaxPool
 - **Training Accuracy**: 99.8%
 - **Validation Accuracy**: 99.3%
 - **Test Accuracy**: 99.0%
-- **Inference Speed**: ~2ms per image (CPU)
 
 ## Dataset
 - **MNIST**: 70,000 grayscale images (28×28 pixels)
@@ -83,10 +78,13 @@ Input (28×28×1) → Conv2D(32) → MaxPool → Conv2D(64) → MaxPool
 3. **Training**: Adam optimizer, 10 epochs, batch size 128
 4. **Evaluation**: Multiple metrics and visualization tools
 
-## Visual Results
-- Accuracy/Loss curves during training
-- Confusion matrix showing per-class performance
-- Sample predictions with confidence scores
+## Notebook Contents
+The main notebook includes:
+- Data loading and exploration
+- Model architecture definition
+- Training and validation process
+- Performance evaluation and visualization
+- Sample predictions and analysis
 
 ## Applications
 - Digital document processing
@@ -106,7 +104,7 @@ Input (28×28×1) → Conv2D(32) → MaxPool → Conv2D(64) → MaxPool
   title = {Handwritten Digit Recognition with CNN},
   author = {Alaboud, Abdulhamid and Alaglan, Ahmed},
   year = {2024},
-  url = {https://github.com/[username]/MNIST-CNN-Classifier}
+  url = {https://github.com/Ahmed-Alaglan/Handwritten-Digit-Recognition-CNN}
 }
 ```
 
@@ -119,3 +117,6 @@ For questions or collaborations, open an issue in this repository.
 ---
 
 *Built with TensorFlow/Keras | MNIST Dataset | Jazan University Research*
+
+## Changelog
+- **v1.0.0**: Initial release with complete CNN implementation and documentation
